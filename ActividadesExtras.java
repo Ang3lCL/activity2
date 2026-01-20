@@ -127,7 +127,13 @@ public class ActividadesExtras {
         System.out.println("Reprobado");
         } else {
         System.out.println("Calificacion invalida");
-        }        
+        }
+        
+        //parte 10
+        System.out.println("dame un numero entero entre 1 y 10: ");
+        int n = sc.nextInt();
+        
+        
 
         sc.close();
 

@@ -373,3 +373,48 @@ Hola angel, bienvenido
 
 ---
 ---
+
+## Ejercicio 9: Clasificación de calificación (if-else y operadores lógicos)
+
+**Enunciado**  
+Escribe un programa que pida una calificación entera de 0 a 100 y muestre:  
+- 90 a 100: “Excelente”  
+- 80 a 89: “Muy bien”  
+- 70 a 79: “Aprobado”  
+- 0 a 69: “Reprobado”  
+Si la calificación está fuera de ese rango, muestra: “Calificación inválida”.
+
+**Codigo**  
+````java
+package actividad_2;
+
+import java.util.Scanner;
+
+public class ActividadesExtras {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        //parte 9
+        System.out.print("Ingresa tu calificacion sin decimales: ");
+        int cal = sc.nextInt();
+
+        if (cal >= 90) {
+        System.out.println("Exelente");
+        } else if (cal < 90) {
+        System.out.println("Muy bien");
+        } else if (cal < 80) {
+        System.out.println("Aprovado");
+        } else if (cal < 70) {
+        System.out.println("Reprobado");
+        } else {
+        System.out.println("Calificacion invalida");
+        }
+              
+        sc.close();
+
+    }   
+}
+
+````
+**Salida real**  
