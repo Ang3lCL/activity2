@@ -117,7 +117,7 @@ public class ActividadesExtras {
         System.out.print("Ingresa tu calificacion sin decimales: ");
         int cal = sc.nextInt();
 
-        if (cal >= 90) {
+        if (cal >= 90 && cal <= 100 ) {
         System.out.println("Exelente");
         } else if (cal < 90) {
         System.out.println("Muy bien");
@@ -134,6 +134,40 @@ public class ActividadesExtras {
         int n = sc.nextInt();
         
         
+        // parte 1 medios
+        System.out.print("ingresa un numero entero: ");
+        int nu = sc.nextInt();
+
+        if (nu > 0) {
+        System.out.println("el numero es positivo");
+        } else if (nu < 0) {
+        System.out.println("el numero es negativo");
+        } else if (nu == 0) {
+        System.out.println("el numero es cero");
+        }
+
+        //parte 2 medios
+        System.out.print("ingresa un numero entero: ");
+        int nume = sc.nextInt();
+
+        if (nume >= 1 && nume <= 100 && nume %2 == 0){
+        System.out.println("El numero es par y esta entre 1 y 100");
+        }
+        else {
+        System.out.println("El numero no es par o no esta entre 1 y 100");
+        }
+
+        //parte 3 medios
+        System.out.println("ingresa tu edad");
+        int age = sc.nextInt();
+
+        if (age <= 120 && age >= 0 && age >= 18){
+        System.out.println("Edad valida, eres mayor de edad");
+        } else if (age <= 120 && age >= 0 && age < 18){
+        System.out.println("Edad valida, eres menor de edad");
+        } else {
+        System.out.println("Edad invalida");
+        }
 
         sc.close();
 

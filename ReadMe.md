@@ -256,6 +256,7 @@ public class ActividadesExtras {
 
 **Salida real**  
 Ingresa tu edad: 18
+
 Eres un adulto
 
 ---
@@ -399,7 +400,7 @@ public class ActividadesExtras {
         System.out.print("Ingresa tu calificacion sin decimales: ");
         int cal = sc.nextInt();
 
-        if (cal >= 90) {
+        if (cal <= 100) {
         System.out.println("Exelente");
         } else if (cal < 90) {
         System.out.println("Muy bien");
@@ -418,3 +419,99 @@ public class ActividadesExtras {
 
 ````
 **Salida real**  
+Ingresa tu calificacion sin decimales: 84
+
+Muy bien
+
+---
+---
+## Ejercicio 1: Número positivo o negativo
+
+**Enunciado**  
+Escribe un programa que pida un número entero y muestre si es positivo, negativo o cero usando `if-else if-else`.
+
+**Codigo**  
+````java
+package actividad_2;
+
+import java.util.Scanner;
+
+public class ActividadesExtras {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+   
+        // parte 1 medios
+        System.out.print("ingresa un numero entero: ");
+        int nu = sc.nextInt();
+
+        if (nu > 0) {
+        System.out.println("el numero es positivo");
+        } else if (nu < 0) {
+        System.out.println("el numero es negativo");
+        } else if (nu == 0) {
+        System.out.println("el numero es cero");
+        }
+
+        sc.close();
+
+    }   
+}
+
+````
+
+**Salida real**  
+ingresa un numero entero: 3
+
+el numero es positivo
+
+---
+---
+
+## Ejercicio 2: Par y dentro de rango
+
+**Enunciado**  
+Escribe un programa que pida un número entero y verifique **dos condiciones**:  
+- Que sea par.  
+- Que esté entre 1 y 100 (inclusive).  
+Si se cumplen ambas, muestra: `El número es par y está entre 1 y 100.`  
+En otro caso, muestra: `El número NO cumple las condiciones.`  
+Usa operadores lógicos (`&&`).
+
+**Codigo**  
+````java
+package actividad_2;
+
+import java.util.Scanner;
+
+public class ActividadesExtras {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        //parte 2 medios
+        System.out.print("ingresa un numero entero: ");
+        int nume = sc.nextInt();
+
+        if (nume >= 1 && nume <= 100 && nume %2 == 0){
+        System.out.println("el numero es par y esta entre 1 y 100");
+        }
+        else {
+        System.out.println("el numero no es par o no esta entre 1 y 100");
+        }
+
+        sc.close();
+
+    }   
+}
+
+````
+
+**Salida real**  
+ingresa un numero entero: 44
+
+el numero es par y esta entre 1 y 100
+
+---
+---
+
