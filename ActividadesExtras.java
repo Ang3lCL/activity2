@@ -169,6 +169,9 @@ public class ActividadesExtras {
         System.out.println("Edad invalida");
         }
 
+        //parte 4 medios
+        
+
         sc.close();
 
     }   

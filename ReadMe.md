@@ -515,3 +515,53 @@ el numero es par y esta entre 1 y 100
 ---
 ---
 
+## Ejercicio 3: Edad válida y mayor de edad
+
+**Enunciado**  
+Escribe un programa que pida una edad entera y verifique:  
+1. Que la edad esté en el rango 0 a 120.  
+2. Que sea mayor o igual a 18.  
+Si la edad es inválida (fuera de 0 a 120) muestra: `Edad inválida.`  
+Si es válida y mayor o igual a 18, muestra: `Edad válida y eres mayor de edad.`  
+Si es válida y menor a 18, muestra: `Edad válida y eres menor de edad.`
+
+**Codigo**  
+````java
+package actividad_2;
+
+import java.util.Scanner;
+
+public class ActividadesExtras {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        //parte 3 medios
+        System.out.println("ingresa tu edad");
+        int age = sc.nextInt();
+
+        if (age <= 120 && age >= 0 && age >= 18){
+        System.out.println("Edad valida, eres mayor de edad");
+        } else if (age <= 120 && age >= 0 && age < 18){
+        System.out.println("Edad valida, eres menor de edad");
+        } else {
+        System.out.println("Edad invalida");
+        }
+
+        sc.close();
+
+    }   
+}
+
+````
+
+**Salida real**  
+ingresa tu edad
+18
+
+Edad valida, eres mayor de edad
+
+---
+---
+
+
