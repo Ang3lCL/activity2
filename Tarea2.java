@@ -18,19 +18,17 @@ public class Tarea2 {
         }
 
         //parte 2
-        System.out.print("Ingresa un número: ");
+        System.out.print("Ingresa un número entre 1 y 10: ");
         int n = sc.nextInt();
 
         int[] pares = new int[n];
         int i = 0;
 
-        // Generar números pares
         while (i < n) {
             pares[i] = (i + 1) * 2;
             i++;
         }
 
-        // Mostrar números
         i = 0;
         while (i < n) {
             System.out.print(pares[i] + " ");

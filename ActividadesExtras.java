@@ -132,6 +132,21 @@ public class ActividadesExtras {
         //parte 10
         System.out.println("dame un numero entero entre 1 y 10: ");
         int n = sc.nextInt();
+
+        int[] pares = new int[n];
+        int i = 0;
+
+        while (i < n) {
+            pares[i] = (i + 1) * 2;
+            i++;
+        }
+
+        i = 0;
+        while (i < n) {
+            System.out.print(pares[i] + " ");
+            i++;
+        }
+
         
         
         // parte 1 medios
@@ -170,7 +185,7 @@ public class ActividadesExtras {
         }
 
         //parte 4 medios
-        
+
 
         sc.close();
 

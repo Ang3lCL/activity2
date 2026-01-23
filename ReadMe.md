@@ -425,6 +425,57 @@ Muy bien
 
 ---
 ---
+
+## Ejercicio 10: Números pares en un rango (for + arreglo pequeño)
+
+**Enunciado**  
+Escribe un programa que:  
+1. Pida un número entero **positivo** `n` (por ejemplo, máximo 10 para que sea sencillo).  
+2. Genere los primeros `n` números pares empezando desde 2.  
+3. Guarde esos números en un arreglo.  
+4. Recorra el arreglo y muestre los números en una sola línea separados por espacio.  
+Este ejercicio es una versión pequeña de la **Parte 2 de la Actividad 2** (pares y arreglos).
+
+**codigo**  
+````java
+package actividad_2;
+
+import java.util.Scanner;
+
+public class Tarea2 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+     
+        System.out.print("Ingresa un número entre 1 y 10: ");
+        int n = sc.nextInt();
+
+        int[] pares = new int[n];
+        int i = 0;
+
+        while (i < n) {
+            pares[i] = (i + 1) * 2;
+            i++;
+        }
+
+        i = 0;
+        while (i < n) {
+            System.out.print(pares[i] + " ");
+            i++;
+        }
+
+        sc.close();
+    }
+}
+````
+
+**Salida real**  
+
+
+
+
+---
+---
 ## Ejercicio 1: Número positivo o negativo
 
 **Enunciado**  
