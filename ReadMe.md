@@ -436,7 +436,7 @@ Escribe un programa que:
 4. Recorra el arreglo y muestre los números en una sola línea separados por espacio.  
 Este ejercicio es una versión pequeña de la **Parte 2 de la Actividad 2** (pares y arreglos).
 
-**codigo**  
+**Codigo**  
 ````java
 package actividad_2;
 
@@ -470,12 +470,13 @@ public class Tarea2 {
 ````
 
 **Salida real**  
+Ingresa un numero del 1 al 10: 4
 
-
-
+2 4 6 8
 
 ---
 ---
+
 ## Ejercicio 1: Número positivo o negativo
 
 **Enunciado**  
